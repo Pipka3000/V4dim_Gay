@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nikgu\\.nuget\\packages\\": {}
+    "C:\\Users\\vadim\\.nuget\\packages\\": {},
+    "D:\\VS\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikgu\\source\\repos\\PZ4\\PZ4\\PZ4.csproj",
+      "projectUniqueName": "D:\\Project\\V4dim_Gay\\PZ4\\PZ4.csproj",
       "projectName": "PZ4",
-      "projectPath": "C:\\Users\\nikgu\\source\\repos\\PZ4\\PZ4\\PZ4.csproj",
-      "packagesPath": "C:\\Users\\nikgu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikgu\\source\\repos\\PZ4\\PZ4\\obj\\",
+      "projectPath": "D:\\Project\\V4dim_Gay\\PZ4\\PZ4.csproj",
+      "packagesPath": "C:\\Users\\vadim\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\V4dim_Gay\\PZ4\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\VS\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nikgu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

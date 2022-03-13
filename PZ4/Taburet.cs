@@ -8,14 +8,11 @@ namespace PZ4
 {
     public class Taburet
     {
-        public Taburet()
-        {
+       
 
-        }
-
-        public int Height;
-        private int Leg;
-        private string Material;
+        protected int Height;
+        protected int Leg;
+        protected string Material;
 
 
         public Taburet(int Height, int Leg, string Material)
@@ -44,6 +41,7 @@ namespace PZ4
             }
             else
             {
+                this.Material = "";
                 Console.WriteLine("Материал не вхордит в перечень");
             }
         }
@@ -84,7 +82,7 @@ namespace PZ4
         }
 
         //Вид материала изделия
-        public void GetMaterial(string Material)
+        public void SetMaterial(string Material)
         {
             if (Material == "Дерево" || Material == "Пластик" || Material == "Металл")
             {
@@ -99,7 +97,18 @@ namespace PZ4
         {
             Console.WriteLine("Материал изделия = " + Material);
         }
+        public virtual void PrintObj()
+        {
+            Console.WriteLine(
+                "Высота: " + Height +
+                "| ножек: " + Leg +
+                "| Материал: " + Material 
+                                );
+        }
+        public Taburet()
+        {
 
+        }
 
     }
 }
