@@ -15,8 +15,10 @@ namespace PR4
     {
         protected string name;
         protected string address;
-        public virtual void send_order() { }
-        public virtual void receive_order() { }
-        
+        public  void send_order() { }
+        public  void receive_order() { }
+        public Customer() { }
+        public Customer(string name) { }
+        public Customer(string address,string name) { }
     }
 }

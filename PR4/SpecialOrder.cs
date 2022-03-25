@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 
 namespace PR4
 {
-    class SpecialOrder:Order
+    interface iSpecialOrder:IOrder
     {
-        protected DateTime date;
-        protected int number;
+        void dispatch();
+       
+      
+    }
+    class SpecialOrder:Order, iSpecialOrder
+    {
+        
         private Customer client;
+        public override void confirm() { }
+        public override void close() { }
+        public void dispatch() { }
+        public SpecialOrder() { }
+        public SpecialOrder(DateTime dateTime) { }
+        public SpecialOrder(Customer client) { }
     }
 }

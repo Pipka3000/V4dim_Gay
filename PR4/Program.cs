@@ -10,6 +10,8 @@ namespace PR4
     {
         static void Main(string[] args)
         {
+            Customer customer = new Customer();
+            
         }
     }
 }

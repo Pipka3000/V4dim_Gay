@@ -8,19 +8,19 @@ namespace PR4
 {
     interface INormalOrder:IOrder
     {
-        void confim();
-        void close();
         void dispatch();
         void receive();
     }
-    class NormalOrder:INormalOrder
+    class NormalOrder:Order ,INormalOrder
     {
-        protected DateTime date;
-        protected int number;
-        public void confim() { }
-        public void close() { }
+        
+        public override void confirm() { }
+        public override  void close() { }
         public void dispatch() { }
         public void receive() { }
+        public NormalOrder() { }
+        public NormalOrder(DateTime dateTime) { }
+        public NormalOrder(int number) { }
 
     }
 }

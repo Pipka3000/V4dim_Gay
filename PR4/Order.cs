@@ -8,15 +8,19 @@ namespace PR4
 {
     interface IOrder
     {
-        void confim();
+        void confirm();
         void close();
-    }
+    } 
     class Order:IOrder
     {
-        protected Customer Customer;
+        
         protected DateTime date;
         protected int number;
-        public void confim() { }
-        public void close() { }
+        public virtual void confirm() { }
+        public virtual void close() { }
+
+        public Order() { }
+        public Order (DateTime dateTime) { }
+        public Order(int number) { }
     }
 }
